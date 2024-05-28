@@ -14,7 +14,7 @@ FROM jupyter/datascience-notebook
 
 
 
-COPY jupyter_notebook_config.py /app/
+COPY . /app/
 WORKDIR /app
 
 #RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E084DAB9 && \
