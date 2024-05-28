@@ -1,6 +1,11 @@
 FROM jupyter/base-notebook
 
 RUN apt-get update && apt-get install -y \
+    software-properties-common \
+    dirmngr \
+    gnupg
+
+RUN apt-get update && apt-get install -y \
     python3-pip \
     libcurl4-openssl-dev \
     libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libxml2-dev libcurl4-openssl-dev libfontconfig1-dev libcairo2-dev libharfbuzz-dev libfribidi-dev libssl-dev libfreetype6-dev libpng-dev libtiff5-dev \
